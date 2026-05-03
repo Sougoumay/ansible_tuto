@@ -1,0 +1,10 @@
+---
+- name: Print facts
+  hosts: all
+  tasks:
+    - name: Print OS name
+      debug:
+        var: ansible_distribution # or ansible_facts["distribution"] : We can have this variable name by using "ansible -m setup host_name" command
+    - name: Print RAM Memony
+      debug:
+        var: ansible_memory_mb.real.free

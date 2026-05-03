@@ -1,0 +1,20 @@
+---
+- name: Webserber setup
+  hosts: web01
+  become: yes
+  tasks:
+    - name: Install Nginx
+      ansible.builtin.apt:
+        name: nginx
+        state: present
+    - name: Start service
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: yes
+    - name: Copy index file
+      ansible.builtin.copy:
+        # src: files/index.html
+        src: xxxxxxxxxx
+        # dest: /var/www/html/index.html
+        dest: /var/www/html/

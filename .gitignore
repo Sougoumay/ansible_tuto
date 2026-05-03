@@ -1,0 +1,20 @@
+# Fichiers d'inventaire sensibles - utiliser les templates *.example
+exercise1/inventory
+exercise2/inventory
+exercise3/inventory
+exercise4/inventory
+exercise5/inventory
+exercise5/web.yaml
+exercise6/inventory
+exercise6/db.yaml
+exercise7/inventory
+exercise7/db.yaml
+exercise8/inventory
+exercise8/group_vars/all
+exercie9/inventory
+exercie10/inventory
+exercie11/inventory
+exercie12/inventory
+exercie13/inventory
+
+

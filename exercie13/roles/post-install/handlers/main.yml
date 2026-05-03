@@ -1,0 +1,9 @@
+#SPDX-License-Identifier: MIT-0
+---
+# handlers file for post-install
+- name: reStart service on ubuntu
+  service:
+    name: chrony
+    state: restarted
+    enabled: yes
+  when: ansible_facts["distribution"] == "Ubuntu"
